@@ -16,9 +16,8 @@ app.use(express.json());
 
 // Routes
 app.use('/', taskRoutes);
-
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/taskmanagement", {
+mongoose.connect("mongodb+srv://kondrajusailendra:Sailendra@1234@taskmanagement.cuvfh.mongodb.net/taskmanagement?retryWrites=true&w=majority&appName=taskmanagement", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
